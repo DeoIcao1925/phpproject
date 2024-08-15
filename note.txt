@@ -1,0 +1,19 @@
+edit the httpd-vhost.conf
+inside extra, after browsing apache in xampp
+
+then edit OS hosts:
+C:\Windows\System32\drivers\etc
+
+note: before you can edit the hosts, make sure to add users full control if can't edit it.
+instructions: click hosts, then properties, Security, tap Users check Full control, then disable it again after 
+doing the job.
+
+add this code 👇👇👇
+# XAMPP Virtual Hosts
+127.0.0.1 framework.local
+
+# framework
+Router , validator, database, template engine, container...all connected to App class <<<
+
+
+>>Command Line<<

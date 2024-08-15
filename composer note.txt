@@ -1,0 +1,21 @@
+composer --version
+composer init --help     
+
+composer init 
+
+then inside composer.json
+=== create autoload ===
+ "autoload": {
+        "psr-4": {
+            "Framework\\": "src/Framework",
+            "App\\": "src/App"
+        }
+    }
+===================
+then run this:
+composer dump-autoload
+
+this will create vendor folder and files 
+
+==== include it in App/bootstrap.php 
+require __DIR__ . "/../../vendor/autoload.php";
